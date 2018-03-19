@@ -11,4 +11,8 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+
+  <ul *ngFor="let list of datenews; let i = index">
+    <li><b>{{i + 1}}.</b>  <b>Title {{list.title}}</b>  Url : <img height="150px" width="150px" src="{{list.urlToImage}}"></li>
+  </ul>
 </ion-content>
